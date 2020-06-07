@@ -6,12 +6,20 @@
     <title>@ViewData["Title"] - RazorPagesMovie</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" type="image" href="~/img/Pixabay.jpg">
+
+    <!--Material from microsoft.com-->
+
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+            <!--Added free picture as logo from pixabay.com-->
+
             <div class="container">
+                <a class="navbar-brand">
+                    <img src="~/img/Pixabay.jpg" title="title" alt="additional title" width="250" height="100" style="vertical-align:auto;margin-left:20px 100px" />
+                </a>
                 <a class="navbar-brand" asp-area="" asp-page="/Index">RazorPagesMovie</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +33,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+
+                        <!--Added Movies as nav item-->
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="/Movies">Movies</a>
                         </li>
+
+                        <!--Added Create as nav item-->
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="/Movies/Create">Create</a>
                         </li>
+
+                        <!--Added Login as nav item-->
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
                         </li>
